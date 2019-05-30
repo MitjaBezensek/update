@@ -29,7 +29,7 @@ module powerbi.extensibility.visual {
     export class Visual implements IVisual {
         private target: HTMLElement;
         private settings: VisualSettings;
-        private version = 1;
+        private version = 2;
 
         constructor(options: VisualConstructorOptions) {
             console.log('Visual constructor', options);
@@ -39,7 +39,7 @@ module powerbi.extensibility.visual {
                 new_p.appendChild(document.createTextNode("Version: " + this.version));
                 new_p.style.color = "white";
                 this.target.appendChild(new_p);
-                this.target.style.background = "red";
+                this.target.style.background = "blue";
             }
         }
 
